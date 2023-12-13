@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="tur">
+	<head>
+		<title>FOTOĞRAF GALERİSİ RAMAZAN ERDOĞAN</title>
+		
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS v5.2.1 -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+	</head>
+<style>
+	body {
+  background: #222;
+  font-family: "Fira Sans", sans-serif;
+  padding-right: 2rem;
+}
+* {
+  box-sizing: border-box;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  max-width: 1300px;
+  margin: auto;
+}
+.gallery__strip {
+  min-height: 100vh;
+}
+.gallery__strip__wrapper {
+  flex: 0 0 100%;
+  justify-content: flex-end;
+  background: #222;
+  border-right: 2px solid #333;
+  position: relative;
+}
+@media (min-width: 500px) {
+  .gallery__strip__wrapper {
+    flex: 0 0 50%;
+  }
+}
+@media (min-width: 950px) {
+  .gallery {
+    height: 100vh;
+  }
+  .gallery__strip.one {
+    animation: 60s move-it ease alternate infinite 5s;
+    transform: translateY(2%);
+  }
+  .gallery__strip.three {
+    animation: 70s move-it ease alternate infinite 6s;
+    transform: translateY(2%);
+  }
+  .gallery__strip.two {
+    animation: 58s move-it-2 ease alternate infinite 5s;
+    transform: translateY(-50%);
+  }
+  .gallery__strip.four {
+    animation: 65s move-it-2 ease alternate infinite 5.5s;
+    transform: translateY(-50%);
+  }
+  .gallery__strip:hover {
+    animation-play-state: paused;
+  }
+  .gallery__strip__wrapper {
+    flex: 0 0 25%;
+  }
+}
+.photo {
+  position: relative;
+  text-align: right;
+  padding-bottom: 3rem;
+}
+.photo__image img {
+  width: 90%;
+  transform: translateX(30%);
+  transition: 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+}
+.photo__name {
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  margin-top: -25px;
+  transition: 0.4s ease-in-out 0.4s;
+  position: relative;
+  width: 100%;
+}
+.photo:hover .photo__image img {
+  transform: translateX(0%);
+}
+.photo:hover .photo__name {
+  color: #ed1a1a;
+}
+@keyframes move-it {
+  0%, 90%, 100% {
+    transform: translateY(2%);
+  }
+  45% {
+    transform: translateY(-50%);
+  }
+}
+@keyframes move-it-2 {
+  0%, 90%, 100% {
+    transform: translateY(-50%);
+  }
+  45% {
+    transform: translateY(5%);
+  }
+}
+</style>
+	<body>
+		<div class="gallery">
+			<div class="gallery__strip__wrapper">
+			  <div class="gallery__strip one">
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=1"/></div>
+				  <div class="photo__name">Photo Names</div>
+				  
+				</div>
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=2"/></div>
+				  
+				</div>
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=3"/></div>
+				  
+				</div>
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=4"/></div>
+				  
+				</div>
+			  </div>
+			</div>
+			<div class="gallery__strip__wrapper">
+			  <div class="gallery__strip two">
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=5"/></div>
+				  
+				</div>
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=6"/></div>
+				  
+				</div>
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=7"/></div>
+				  
+				</div>
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=8"/></div>
+				  
+				</div>
+			  </div>
+			</div>
+			<div class="gallery__strip__wrapper">
+			  <div class="gallery__strip three">
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=9"/></div>
+				  
+				</div>
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=10"/></div>
+				  
+				</div>
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=11"/></div>
+				  
+				</div>
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=12"/></div>
+				  
+				</div>
+			  </div>
+			</div>
+			<div class="gallery__strip__wrapper">
+			  <div class="gallery__strip four">
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=13"/></div>
+				  
+				</div>
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=14"/></div>
+				  
+				</div>
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=15"/></div>
+				  
+				</div>
+				<div class="photo">
+				  <div class="photo__image"><img src="https://picsum.photos/200/300?random=16"/></div>
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
