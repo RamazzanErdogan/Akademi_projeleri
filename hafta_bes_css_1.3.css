@@ -1,0 +1,31 @@
+.post {
+  background-color: #fff;
+  border: 1px solid #65a8f5;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin: 20px;
+  color: #65a8f5;
+  border-radius: 25px;
+}
+
+.post-username {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.post-message {
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #65a8f5;
+}
+
+.post-timestamp {
+  color: #2c2c2c;
+  font-size: 0.8rem;
+  margin: 0;
+}
